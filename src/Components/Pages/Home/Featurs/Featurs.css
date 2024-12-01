@@ -1,0 +1,188 @@
+/* Project Name: Landing Page Using SwiperJS
+Copyright: PXDR0 */
+
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Roboto:wght@300;400;500;900&display=swap");
+
+
+
+/* Custom CSS */
+.feturs-container {
+  width: 100%;
+  min-height: 100vh;
+  column-gap: 40px;
+  padding: 60px 6%;
+  border-radius:10px;
+}
+
+.feturs-container .side-info {
+  margin: 20px 0;
+  border-radius:10px;
+}
+
+.feturs-container .side-info span {
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 16px;
+  color: #717171;
+}
+
+.feturs-container .side-info h1 {
+  text-transform: capitalize;
+  letter-spacing: 0.8px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 56px;
+  background-color: #005baa;
+  background-image: linear-gradient(45deg, #005baa, #000000);
+  background-size: 100%;
+  background-repeat: repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.feturs-container .side-info hr {
+  display: block;
+  background: #005baa;
+  height: 4px;
+  width: 20%;
+  margin: 18px 0;
+}
+
+.feturs-container a {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #717171;
+  font-weight: 500;
+  background: #fff;
+  border-radius: 50px;
+  border: 2px solid #c2c2c2;
+  padding: 8px 16px;
+  margin-top: 20px;
+  transition: 0.3s ease-in-out;
+}
+
+.feturs-container a:hover {
+  border: 2px solid #005baa;
+  color: #005baa;
+}
+
+.feturs-container .swiper {
+  width: 100%;
+}
+
+.swiper-pagination-bullet,
+.swiper-pagination-bullet-active {
+  background: #fff;
+}
+
+.swiper-pagination {
+  bottom: 20px !important;
+}
+
+.-Featurs-swiper-slide {
+  width: 300px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: self-start;
+  border-radius:25px;
+  filter:drop-shadow(10px 5px 10px lightyellow)
+  
+}
+
+.-Featurs-swiper-slide:hover{
+  transform:scale(1.1);
+}
+
+.-Featurs-swiper-slide h2 {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.4;
+  margin-bottom: 10px;
+  padding: 0 0 0 24px;
+  text-transform: uppercase;border-border-radius:25px;
+}
+
+.-Featurs-swiper-slide p {
+  color: #dadada;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  padding: 0 24px;
+  font-size: 12px;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.-Featurs-swiper-slide a {
+  margin: 20px 25px 50px !important;
+  padding: 8px 16px !important;
+  font-size: 14px;
+  border: none;
+}
+
+.-Featurs-swiper-slide a:hover {
+  border: none;
+}
+
+.-Featurs-swiper-slide div {
+  display: none;
+  opacity: 0;
+  padding-bottom: 10px;
+}
+
+.-Featurs-swiper-slide-active div {
+  display: block;
+  opacity: 1;
+}
+
+.slide-one {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url(https://media.istockphoto.com/id/959584318/photo/making-dinner-into-a-masterpiece.jpg?s=612x612&w=0&k=20&c=5sadZdufW-4j_ZmV3XM8KSZXRFcYRD-Nmh0vqTkIS7Y=) no-repeat 50% 50% / cover;
+}
+
+.slide-two {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url(https://media.istockphoto.com/id/692557700/photo/burger.jpg?s=612x612&w=0&k=20&c=8ajzPWqvrLvl779OI3XMFR_tZV5V-7VSDlSeaX47Uhk=) no-repeat 50% 50% / cover;
+}
+
+.slide-three {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url(https://media.istockphoto.com/id/1377926786/photo/teenage-girl-having-breakfast.jpg?s=612x612&w=0&k=20&c=1A8qPEUmQH4Tsgbav1jOK4IYX74T_5mkyvfplB0lATc=) no-repeat 50% 50% / cover;
+}
+
+.slide-four {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url(https://media.istockphoto.com/id/913931820/photo/chef-in-restaurant-kitchen-at-stove-with-high-burning-flames.jpg?s=612x612&w=0&k=20&c=rWgTCzIvbWdE-wkyqU06JTnY4cUlnWl5Du0tcjilnTc=) no-repeat 50% 50% / cover;
+}
+
+/* Responsive Design */
+@media (min-width: 800px) {
+  .feturs-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .feturs-container .side-info {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .feturs-container .side-info h1 {
+    font-size: 46px;
+  }
+
+  .feturs-container .side-info p {
+    font-size: 14px;
+  }
+}

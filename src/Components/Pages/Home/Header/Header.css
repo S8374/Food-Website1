@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&family=Patua+One&family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=BioRhyme+Expanded:wght@200;300;400;700;800&family=Oswald:wght@200..700&family=Patua+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=BioRhyme+Expanded:wght@200;300;400;700;800&family=Lobster&family=Oswald:wght@200..700&family=Patua+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rubik+Mono+One&display=swap');
+.font1{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    
+    text-transform: uppercase;
+    
+}
+
+
+
+.font2{
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+
+.font3{
+  
+    font-family: "BioRhyme Expanded", serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+.font4{
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* Ensure the NavbarMenu is fully visible */
+body.modal-open {
+    filter: blur(5px);
+    transition: filter 0.3s ease;
+  }
+  
